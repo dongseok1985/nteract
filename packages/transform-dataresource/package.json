@@ -12,7 +12,9 @@
     "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib",
     "build:lib": "cross-env NODE_ENV=production babel -d lib src --ignore '**/__tests__/**'",
     "build:lib:watch": "npm run build:lib -- --watch",
-    "build:watch": "npm run build:clean && npm run build:lib:watch && npm run build:flow"
+    "build:watch": "npm run build:clean && npm run build:lib:watch && npm run build:flow",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Kyle Kelley <rgbkrk@gmail.com>",
   "repository": "https://github.com/nteract/nteract/tree/master/packages/transform-dataresource",
@@ -42,6 +44,8 @@
     "react-table": "^6.8.6",
     "react-table-hoc-fixed-columns": "1.0.2",
     "semiotic": "^1.14.4",
-    "tv4": "^1.3.0"
-  }
+    "tv4": "^1.3.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
