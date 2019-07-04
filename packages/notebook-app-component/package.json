@@ -12,7 +12,9 @@
     "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib",
     "build:lib": "cross-env NODE_ENV=production babel -d lib src --ignore '**/__tests__/**' --config-file ../../babel.config.js",
     "build:lib:watch": "npm run build:lib -- --watch",
-    "build:watch": "npm run build:clean && npm run build:lib:watch && npm run build:flow"
+    "build:watch": "npm run build:clean && npm run build:lib:watch && npm run build:flow",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": "https://github.com/nteract/nteract/tree/master/packages/notebook-app-component",
   "publishConfig": {
@@ -37,7 +39,8 @@
     "react-dnd-html5-backend": "^5.0.0",
     "react-hot-loader": "^4.1.2",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "snyk": "^1.189.0"
   },
   "peerDependencies": {
     "immutable": "^4.0.0-rc.9",
@@ -45,5 +48,6 @@
     "styled-jsx": "^3.1.0"
   },
   "author": "Kyle Kelley <rgbkrk@gmail.com>",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "snyk": true
 }
