@@ -12,14 +12,17 @@
     "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib",
     "build:lib": "babel -d lib src --ignore '**/__tests__/**' --config-file ../../babel.config.js",
     "build:lib:watch": "npm run build:lib -- --watch",
-    "build:watch": "npm run build:clean && npm run build:lib:watch && npm run build:flow"
+    "build:watch": "npm run build:clean && npm run build:lib:watch && npm run build:flow",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@babel/runtime-corejs2": "^7.0.0",
     "babel-runtime": "^6.26.0",
     "escape-carriage": "^1.2.0",
     "immer": "^1.5.0",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "snyk": "^1.189.0"
   },
   "peerDependencies": {
     "immutable": "^4.0.0-rc.9"
@@ -33,5 +36,6 @@
     "spin-it"
   ],
   "author": "Kyle Kelley <rgbkrk@gmail.com>",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "snyk": true
 }
