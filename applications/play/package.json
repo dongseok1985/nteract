@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "publishConfig": {
     "access": "public"
@@ -35,6 +37,8 @@
     "rx-binder": "^2.1.4",
     "rx-jupyter": "^3.2.3",
     "rxjs": "^5.5.6",
-    "uuid": "^3.1.0"
-  }
+    "uuid": "^3.1.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
