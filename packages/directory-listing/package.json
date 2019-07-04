@@ -12,14 +12,17 @@
     "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib",
     "build:lib": "babel -d lib src --ignore '**/__tests__/**'",
     "build:lib:watch": "npm run build:lib -- --watch",
-    "build:watch": "npm run build:clean && npm run build:lib:watch && npm run build:flow"
+    "build:watch": "npm run build:clean && npm run build:lib:watch && npm run build:flow",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
     "@babel/runtime-corejs2": "^7.0.0",
     "@nteract/octicons": "^0.4.3",
     "@nteract/timeago": "^3.6.3",
-    "react-hot-loader": "^4.1.2"
+    "react-hot-loader": "^4.1.2",
+    "snyk": "^1.189.0"
   },
   "peerDependencies": {
     "react": "^16.3.2"
@@ -33,5 +36,6 @@
     "notebook tree view"
   ],
   "author": "Alexander C. Booth <alexander.c.booth@gmail.com",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "snyk": true
 }
