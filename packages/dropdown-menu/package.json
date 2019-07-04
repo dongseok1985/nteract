@@ -12,7 +12,9 @@
     "build:flow": "flow-copy-source -v -i '**/__tests__/**' src lib",
     "build:lib": "babel -d lib src --ignore '**/__tests__/**'",
     "build:lib:watch": "npm run build:lib -- --watch",
-    "build:watch": "npm run build:clean && npm run build:lib:watch && npm run build:flow"
+    "build:watch": "npm run build:clean && npm run build:lib:watch && npm run build:flow",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": "https://github.com/nteract/nteract/tree/master/packages/dropdown-menu",
   "keywords": [
@@ -28,12 +30,14 @@
     "@babel/runtime": "^7.0.0",
     "@babel/runtime-corejs2": "^7.0.0",
     "react-hot-loader": "^4.1.2",
-    "styled-jsx": "^3.1.0"
+    "styled-jsx": "^3.1.0",
+    "snyk": "^1.189.0"
   },
   "peerDependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   },
   "author": "Kyle Kelley <rgbkrk@gmail.com>",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "snyk": true
 }
