@@ -1,0 +1,18 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - '@nteract/editor > lodash':
+        patched: '2019-07-04T01:11:09.997Z'
+    - '@nteract/transforms > @nteract/transform-vdom > lodash':
+        patched: '2019-07-04T01:11:09.997Z'
+    - '@nteract/dropdown-menu > react-hot-loader > lodash':
+        patched: '2019-07-04T01:11:09.997Z'
+    - '@nteract/editor > @nteract/transforms > @nteract/transform-vdom > lodash':
+        patched: '2019-07-04T01:11:09.997Z'
+    - '@nteract/dropdown-menu > styled-jsx > babel-types > lodash':
+        patched: '2019-07-04T01:11:09.997Z'
+    - '@nteract/editor > @nteract/display-area > @nteract/transforms > @nteract/transform-vdom > lodash':
+        patched: '2019-07-04T01:11:09.997Z'
