@@ -12,7 +12,9 @@
     "build:frontend-for-production": "next build",
     "build:server": "babel backend -d lib",
     "build:all": "npm run build:server && npm run build:frontend-for-production",
-    "prepublishOnly": "npm run build:all"
+    "prepublishOnly": "npm run build:all",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bin": {
     "commuter": "bin.js"
@@ -80,6 +82,8 @@
     "util": "^0.11.0",
     "winston": "^3.0.0",
     "xhr2": "*",
-    "xmlhttprequest": "^1.8.0"
-  }
+    "xmlhttprequest": "^1.8.0",
+    "snyk": "^1.230.5"
+  },
+  "snyk": true
 }
