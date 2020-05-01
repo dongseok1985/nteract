@@ -1,0 +1,62 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - '@nteract/transform-vega > lodash':
+        patched: '2020-05-01T04:58:21.030Z'
+    - bodybuilder > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - elasticsearch > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - '@nteract/transforms > @nteract/transform-vdom > lodash':
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > @babel/core > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > autodll-webpack-plugin > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > webpackbar > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > write-file-webpack-plugin > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - s3-proxy > async > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - winston > async > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - '@nteract/notebook-preview > @nteract/transforms > @nteract/transform-vdom > lodash':
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > autodll-webpack-plugin > webpack-merge > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > styled-jsx > babel-types > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > webpackbar > consola > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > webpackbar > table > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - '@nteract/notebook-preview > @nteract/display-area > @nteract/transforms > @nteract/transform-vdom > lodash':
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > @babel/preset-env > @babel/plugin-transform-modules-umd > @babel/helper-module-transforms > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - '@babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > lodash':
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > @babel/preset-env > @babel/plugin-transform-unicode-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - '@babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/generator > lodash':
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/generator > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - '@babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash':
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
+    - '@babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash':
+        patched: '2020-05-01T04:58:21.030Z'
+    - next > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2020-05-01T04:58:21.030Z'
