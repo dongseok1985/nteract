@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@nteract/transform-vega > lodash':
+        patched: '2020-05-01T00:29:10.861Z'
+    - '@nteract/transforms > @nteract/transform-vdom > lodash':
+        patched: '2020-05-01T00:29:10.861Z'
+    - '@nteract/transform-dataresource > react-color > lodash':
+        patched: '2020-05-01T00:29:10.861Z'
+    - '@nteract/transform-dataresource > styled-jsx > @babel/types > lodash':
+        patched: '2020-05-01T00:29:10.861Z'
+    - '@nteract/transform-dataresource > react-color > reactcss > lodash':
+        patched: '2020-05-01T00:29:10.861Z'
+    - '@nteract/transform-dataresource > @nteract/styled-blueprintjsx > styled-jsx > @babel/types > lodash':
+        patched: '2020-05-01T00:29:10.861Z'
+    - '@nteract/transform-dataresource > react-table-hoc-fixed-columns > emotion > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-05-01T00:29:10.861Z'
