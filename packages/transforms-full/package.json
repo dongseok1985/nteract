@@ -38,7 +38,7 @@
     "@nteract/transform-geojson": "^3.2.3",
     "@nteract/transform-model-debug": "^3.2.3",
     "@nteract/transform-plotly": "^3.2.3",
-    "@nteract/transform-vega": "^3.2.4",
+    "@nteract/transform-vega": "^7.0.0",
     "@nteract/transforms": "^4.4.4",
     "babel-runtime": "^6.26.0"
   }
