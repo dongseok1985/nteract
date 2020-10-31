@@ -18,7 +18,7 @@
     "@babel/runtime-corejs2": "^7.0.0",
     "@nteract/core": "^7.0.2",
     "@nteract/display-area": "^4.4.5",
-    "@nteract/editor": "^7.3.5",
+    "@nteract/editor": "^10.1.4",
     "@nteract/messaging": "^4.1.4",
     "@nteract/presentational-components": "^0.4.3",
     "@nteract/webpack-configurator": "^1.2.4",
