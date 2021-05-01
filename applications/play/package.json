@@ -20,7 +20,7 @@
     "@nteract/display-area": "^4.4.5",
     "@nteract/editor": "^7.3.5",
     "@nteract/messaging": "^4.1.4",
-    "@nteract/presentational-components": "^0.4.3",
+    "@nteract/presentational-components": "^3.4.10",
     "@nteract/webpack-configurator": "^1.2.4",
     "deepmerge": "^2.0.1",
     "lodash": "^4.17.4",
