@@ -51,7 +51,7 @@
     "@nteract/markdown": "^2.1.4",
     "@nteract/notebook-preview": "^8.0.1",
     "@nteract/octicons": "^0.4.3",
-    "@nteract/presentational-components": "^0.4.3",
+    "@nteract/presentational-components": "^3.4.10",
     "@nteract/timeago": "^3.6.3",
     "@nteract/transform-vega": "^3.2.4",
     "@nteract/transforms": "^4.4.4",
