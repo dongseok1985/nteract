@@ -29,7 +29,7 @@
     "@nteract/markdown": "^2.1.4",
     "@nteract/messaging": "^4.1.4",
     "@nteract/octicons": "^0.4.3",
-    "@nteract/presentational-components": "^0.4.3",
+    "@nteract/presentational-components": "^3.4.10",
     "@nteract/transforms": "^4.4.4",
     "babel-runtime": "^6.26.0",
     "rc-menu": "6.2.11",
